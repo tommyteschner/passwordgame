@@ -1,0 +1,303 @@
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   background-color: rgba(255, 253, 208, 255);
+   white-space: normal;
+}
+
+h1 {
+   font-family: "Gideon Roman", serif;
+   font-weight: 400;
+   font-style: normal;
+   text-align: center;
+   font-size: 35px;
+}
+
+p {
+   font-family: "Montserrat";
+   font-weight: 400;
+   font-style: normal;
+   margin: 0;
+   font-size: 16px;
+}
+
+p1 {
+   font-family: "Montserrat";
+   font-weight: 400;
+   font-style: normal;
+   font-size: 15px;
+}
+
+p2 {
+   font-family: "Montserrat";
+   font-weight: 500;
+   font-style: normal;
+   font-size: 17px;
+}
+
+.passwordgame {
+   position: relative;
+   max-width: fit-content;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 100px;
+   margin-bottom: 70px;
+}
+.textbox {
+   margin-left: auto;
+   margin-right: auto;
+   max-width: fit-content;
+}
+
+#autoresizing {
+   overflow: hidden;
+   resize: none;
+   box-sizing: border-box;
+}
+
+#count {
+   animation: fadeIn 1.5s;
+}
+textarea {
+   width: 470px;
+   padding: 12px 12px;
+   margin: 10px auto;
+   display: block;
+   background-color: white;
+   border-radius: 7px;
+   box-sizing: border-box;
+
+   resize: none;
+   height: 0;
+
+   outline: none !important;
+
+   font-family: "Montserrat";
+   font-weight: 430;
+   font-style: normal;
+   font-size: 30px;
+}
+
+textarea:focus {
+   outline: none !important;
+   border-color: black;
+   box-shadow: 0 0 2px black;
+}
+
+.rulebad {
+   width: 470px;
+   height: fit-content;
+   margin: 0 auto;
+
+   background-color: rgb(256, 236, 236);
+   border-radius: 7px;
+   box-sizing: border-box;
+   font-family: "Montserrat";
+   font-weight: 400;
+   font-style: normal;
+   font-size: 30px;
+
+   box-shadow: 0 0 5px rgb(255, 0, 0);
+   animation: fadeIn 0.3s;
+}
+
+.rulegood {
+   width: 470px;
+   height: fit-content;
+   margin: 0 auto;
+   background-color: rgb(232, 252, 228);
+   border-radius: 7px;
+   box-sizing: border-box;
+   font-family: "Montserrat";
+   font-weight: 400;
+   font-style: normal;
+   font-size: 30px;
+
+   box-shadow: 0 0 5px rgb(19, 114, 0);
+   animation: fadeIn 0.3s;
+}
+
+/* fade in animations */
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
+
+.topbad {
+   display: flex;
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+   background-color: rgb(256, 196, 196);
+   width: 100%;
+   vertical-align: top;
+}
+
+.topgood {
+   display: flex;
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+   background-color: rgb(176, 244, 172);
+   width: 100%;
+   vertical-align: top;
+}
+
+.smallimg {
+   width: 25px;
+   padding: 12px 12px;
+}
+
+.bottom {
+   padding: 12px 12px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   row-gap: 10px;
+}
+
+#congrats {
+   width: 470px;
+   height: 78px;
+   margin: 30px auto;
+   background-color: rgb(176, 244, 172);
+   border-radius: 7px;
+   box-sizing: border-box;
+   font-family: "Montserrat";
+   font-weight: 400;
+   font-style: normal;
+   font-size: 15px;
+
+   box-shadow: 0 0 5px rgb(19, 114, 0);
+   animation: fadeIn 0.3s;
+   padding: 12px 12px;
+   text-align: center;
+}
+
+.button {
+   background-color: #04aa6d;
+   border: none;
+   color: white;
+   display: block;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 16px;
+   margin: 35px;
+   cursor: pointer;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: fit-content;
+   border-radius: 5px;
+}
+
+.button:hover {
+   background-color: #02965f;
+}
+
+#password {
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility 0.5s linear, opacity 0.5s linear;
+}
+
+#confirm {
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility 0.5s linear, opacity 0.5s linear;
+   padding: 20px;
+}
+
+#ruleimage {
+   width: 350px;
+   height: 100px;
+}
+
+#ruleimage12 {
+   width: 100%;
+   height: 100%;
+}
+
+#ruleimage13,
+#ruleimage15 {
+   margin-left: auto;
+   margin-right: auto;
+   width: 60%;
+   height: 60%;
+}
+
+#ruleimage18 {
+   margin-left: auto;
+   margin-right: auto;
+   width: 75%;
+   height: 75%;
+}
+
+.rules {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   padding: 30px;
+}
+
+#lose {
+   width: 470px;
+   height: 68px;
+   margin: 30px auto;
+   background-color: rgb(252, 84, 84);
+   border-radius: 7px;
+   box-sizing: border-box;
+   font-family: "Montserrat";
+   font-weight: 400;
+   font-style: normal;
+   font-size: 15px;
+
+   box-shadow: 0 0 5px rgb(19, 114, 0);
+   animation: fadeIn 0.3s;
+   padding: 12px 12px;
+   text-align: center;
+}
+
+table {
+   margin-top: 12px;
+   background-color: rgb(176, 244, 172);
+   margin-left: -12px;
+
+   border-radius: 7px;
+   width: 470px;
+
+   margin-bottom: -12px;
+   box-shadow: 0 0 5px rgb(19, 114, 0);
+   animation: fadeIn 0.3s;
+}
+
+table td {
+   padding: 2px;
+}
+
+#leaderboard {
+   margin: 60px auto;
+   padding-bottom: 50px;
+}
+
+#confirmbutton {
+   background-color: #04aa6d;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 16px;
+   margin: 5px;
+   cursor: pointer;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: fit-content;
+   border-radius: 5px;
+
+   animation: fadeIn 0.3s;
+}
